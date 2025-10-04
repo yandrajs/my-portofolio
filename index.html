@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Tailwind CSS</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/input.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header Section Start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-center relative">
+          <div class="flex items-center px-4 py-6 md:py-0">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-200 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-200 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-200 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base font-bold text-primary py-2 mx-8 flex group-hover:text-pink-500"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base font-bold text-primary py-2 mx-8 flex group-hover:text-pink-500"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base font-bold text-primary py-2 mx-8 flex group-hover:text-pink-500"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#tech-stack"
+                    class="text-base font-bold text-primary py-2 mx-8 flex group-hover:text-pink-500"
+                    >Tech Stack</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base font-bold text-primary py-2 mx-8 flex group-hover:text-pink-500"
+                    >Kontak</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="lg:px-10 pt-36 pb-16">
+      <div class="container">
+        <div class="w-full text-center px-4">
+          <h1 class="text-base font-semibold text-primary md:text-xl">
+            Halo Semua, Saya
+            <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
+              >Yandra Jafar Sidiq!</span
+            >
+          </h1>
+          <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+            Junior Web Developer
+          </h2>
+          <p class="font-medium text-secondary mb-10 leading-relaxed">
+            Junior👨‍🎓 ➙ Senior👨‍💻 ➙ Farmer👨‍🌾
+          </p>
+
+          <a
+            href="#contact"
+            class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
+            >Hubungi Saya</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="lg:px-10 pt-36 pb-16">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h1 class="font-bold text-primary text-lg mb-3">Tentang Saya</h1>
+            <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl">
+              Siapa saya?
+            </h3>
+            <p class="font-medium text-base text-secondary max-w-xl lg:text-lg">
+              Saya merupakan lulusan baru SMK dengan jurusan Rekayasa Perangkat
+              Lunak. Memiliki minat dan ketertarikan dalam bidang pengembangan
+              perangkat lunak dan website, serta terbiasa menggunakan berbagai
+              teknologi web untuk membangun aplikasi yang fungsional dan
+              interaktif.
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10"
+            >
+              Temukan saya
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+              Ikuti media sosial saya untuk tetap terhubung dan mengenal saya
+              lebih dekat.
+            </p>
+            <div class="flex items-center gap-2 lg:w-1/2">
+              <!-- Instagram -->
+              <a
+                href="https:/instagram.com/y.jafarsidiq"
+                class="w-9 h-9 rounded-full flex justify-center items-center text-dark border border-dark hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  viewBox="0 0 30 30"
+                  class="fill-current"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Spotify -->
+              <a
+                href="https://open.spotify.com/user/31ue7gnqj7fyiovbwy4scbwkb7sm?si=63a4cdbbd6d949f5"
+                class="w-9 h-9 rounded-full flex justify-center items-center text-dark border border-dark hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="25"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>Spotify</title>
+                  <path
+                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                  />
+                </svg>
+              </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/yandrajs"
+                class="w-9 h-9 rounded-full flex justify-center items-center text-dark border border-dark hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="25"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- LingkedIn -->
+              <a
+                href="https://www.linkedin.com/in/yandra-jafar-sidiq-714770352"
+                class="w-9 h-9 rounded-full flex justify-center items-center text-dark border border-dark hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  viewBox="0 0 30 30"
+                  class="fill-current"
+                >
+                  <title>LingkedIn</title>
+                  <path
+                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+                  ></path>
+                </svg>
+              </a>
+              <!-- Codewars -->
+              <a
+                href="https://www.codewars.com/users/yandrajs"
+                class="w-9 h-9 rounded-full flex justify-center items-center text-dark border border-dark hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+                ><svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                >
+                  <title>Codewars</title>
+                  <path
+                    d="M1.072.142A1.072 1.072 0 0 0 0 1.214v21.572a1.072 1.072 0 0 0 1.072 1.072h21.856A1.072 1.072 0 0 0 24 22.786V1.214A1.072 1.072 0 0 0 22.928.142zm9.736 1.818a.904.904 0 0 1 .828.539.784.784 0 0 1 1.274.493.639.639 0 0 1 .29-.06c.33.008.59.262.625.575a1.322 1.322 0 0 1 .624-.515 1.325 1.325 0 0 1 1.718.71 1.098 1.098 0 0 1 .306-.236 1.102 1.102 0 0 1 1.483.479 1.094 1.094 0 0 1 .12.47.994.994 0 0 1 1.322 1.214.904.904 0 0 1 .874 1.438.784.784 0 0 1 .176 1.356.639.639 0 0 1 .19.224.642.642 0 0 1-.011.613 1.326 1.326 0 0 1 .482.235 1.334 1.334 0 0 1 .258 1.842 1.098 1.098 0 0 1 .35.15 1.102 1.102 0 0 1 .337 1.516 1.094 1.094 0 0 1-.344.344.994.994 0 0 1 .228 1.318 1.006 1.006 0 0 1-.605.434.904.904 0 0 1-.803 1.482.814.814 0 0 0-.008-.04.784.784 0 0 1-1.075.873.639.639 0 0 1-.098.28.625.625 0 0 1-.43.288 1.33 1.33 0 0 1 .023.456 1.334 1.334 0 0 1-1.44 1.173 1.098 1.098 0 0 1 .054.377 1.102 1.102 0 0 1-1.128 1.072 1.098 1.098 0 0 1-.47-.12.994.994 0 0 1-1.696.583.904.904 0 0 1-1.685.075.784.784 0 0 1-1.274-.493.639.639 0 0 1-.29.064.64.64 0 0 1-.621-.58l.004-.007a1.326 1.326 0 0 1-.632.523 1.334 1.334 0 0 1-1.718-.706 1.098 1.098 0 0 1-.306.232 1.102 1.102 0 0 1-1.48-.478 1.094 1.094 0 0 1-.123-.471.994.994 0 0 1-1.318-1.21.904.904 0 0 1-.874-1.442.784.784 0 0 1-.176-1.356.639.639 0 0 1-.194-.224.642.642 0 0 1 .011-.61l.019.004a1.326 1.326 0 0 1-.497-.239 1.334 1.334 0 0 1-.262-1.845 1.098 1.098 0 0 1-.35-.146 1.102 1.102 0 0 1-.337-1.52 1.094 1.094 0 0 1 .347-.34A.994.994 0 0 1 2.88 9a.904.904 0 0 1 .803-1.48.784.784 0 0 1 1.083-.836.639.639 0 0 1 .098-.28.649.649 0 0 1 .433-.288 1.33 1.33 0 0 1-.026-.452A1.334 1.334 0 0 1 6.716 4.49a1.098 1.098 0 0 1-.06-.377 1.101 1.101 0 0 1 1.13-1.073 1.094 1.094 0 0 1 .47.115.994.994 0 0 1 1.696-.579.904.904 0 0 1 .857-.617zM3.683 7.519a.784.784 0 0 0 .008.041l-.004-.04a.904.904 0 0 0-.004-.001zM17.502 19.61a1.098 1.098 0 0 0-.002-.004h-.037a1.334 1.334 0 0 0 .039.004zM13.825 3.507a1.322 1.322 0 0 0-.008.012l.008-.011zm-2.369-.014l-.003.003a.9.9 0 0 1-.665.27.896.896 0 0 1-.583-.232.994.994 0 0 1-.986.732.99.99 0 0 1-.362-.075 1.098 1.098 0 0 1-1.061 1.046 1.326 1.326 0 0 1 .123.736 1.334 1.334 0 0 1-.725 1.035 1.1 1.1 0 0 1 .307.795 1.106 1.106 0 0 1-.232.65c.321.18.53.523.523.915a1.016 1.016 0 0 1-.07.337.915.915 0 0 1 .82.937.923.923 0 0 1-.01.138.74.74 0 0 1 .157-.01c.343.007.627.25.702.57a.661.661 0 0 1 .38-.111c.31.007.561.224.632.511a.418.418 0 0 1 .381-.015 1.352 1.352 0 0 1 .303-.63.418.418 0 0 1-.12-.143.422.422 0 0 1 .004-.392.665.665 0 0 1-.325-1.117.736.736 0 0 1-.359-.336.74.74 0 0 1 .385-1.023.747.747 0 0 0-.06.026.915.915 0 0 1-.201-.262.915.915 0 0 1 .623-1.315V6.53a1.02 1.02 0 0 1 .437-1.371 1.012 1.012 0 0 1 .553-.112 1.11 1.11 0 0 1 .598-1.054 1.12 1.12 0 0 1 .06-.026.642.642 0 0 1-.109-.21.784.784 0 0 1-.455.132.784.784 0 0 1-.662-.396zm4.573 1.512a1.326 1.326 0 0 1-.587.46 1.334 1.334 0 0 1-1.255-.142v-.011a1.11 1.11 0 0 1-.553.66 1.106 1.106 0 0 1-.683.113 1.02 1.02 0 0 1-.553.889 1.016 1.016 0 0 1-.329.105.918.918 0 0 1-.43 1.169.923.923 0 0 1-.127.056.74.74 0 0 1 .086.13.738.738 0 0 1-.168.89.661.661 0 0 1 .28.283.655.655 0 0 1-.149.796.418.418 0 0 1 .153.164c.019.034.03.068.038.101a1.356 1.356 0 0 1 .672-.015.422.422 0 0 1 .056-.142.422.422 0 0 1 .34-.194.665.665 0 0 1 .796-.848.736.736 0 0 1 .112-.478.733.733 0 0 1 1.016-.224.915.915 0 0 1 .127-.306.915.915 0 0 1 1.27-.28.915.915 0 0 1 .179.153 1.02 1.02 0 0 1 1.408-.314 1.012 1.012 0 0 1 .374.422c.355-.24.833-.261 1.214-.015a1.11 1.11 0 0 1 .209.172.642.642 0 0 1 .082-.108.784.784 0 0 1-.332-.337.784.784 0 0 1 .03-.77.9.9 0 0 1-.553-.455.896.896 0 0 1-.075-.624.994.994 0 0 1-1.117-.511.994.994 0 0 1-.104-.359 1.098 1.098 0 0 1-1.427-.43zM5.249 7.37a.784.784 0 0 1-.124.46.784.784 0 0 1-.68.362c.06.235.026.49-.112.71a.896.896 0 0 1-.5.377c.31.325.373.829.12 1.225a.99.99 0 0 1-.255.269 1.098 1.098 0 0 1 .351 1.45 1.326 1.326 0 0 1 .691.276 1.334 1.334 0 0 1 .512 1.154c.28-.064.579-.019.84.15a1.106 1.106 0 0 1 .438.53 1.02 1.02 0 0 1 1.05.03 1.016 1.016 0 0 1 .257.231.914.914 0 0 1 1.225-.224.919.919 0 0 1 .112.086.74.74 0 0 1 .071-.142.74.74 0 0 1 .852-.306.661.661 0 0 1 .1-.381.664.664 0 0 1 .763-.273.418.418 0 0 1 .246-.373 1.36 1.36 0 0 1-.358-.523v-.008a.418.418 0 0 1-.25.075.422.422 0 0 1-.344-.19.665.665 0 0 1-1.132-.243.736.736 0 0 1-.47.149.733.733 0 0 1-.718-.755.915.915 0 0 1-.329.049.915.915 0 0 1-.855-1.177h-.004a1.016 1.016 0 0 1-.993-1.042 1.012 1.012 0 0 1 .168-.534 1.11 1.11 0 0 1-.64-1.035 1.11 1.11 0 0 1 .068-.358.65.65 0 0 1-.1-.019zm11.127 2.133a.913.913 0 0 1-1.225.224.926.926 0 0 1-.112-.082.74.74 0 0 1-.067.142.74.74 0 0 1-.852.302.661.661 0 0 1-.105.385.662.662 0 0 1-.762.277.418.418 0 0 1-.063.212.426.426 0 0 1-.075.086 1.356 1.356 0 0 1 .314.564.418.418 0 0 1 .187-.04.422.422 0 0 1 .343.194.665.665 0 0 1 1.136.242.736.736 0 0 1 .467-.153c.41.008.728.348.72.755a.74.74 0 0 1 0 .008v-.005a.915.915 0 0 1 .326-.052.915.915 0 0 1 .896.941.919.919 0 0 1-.037.236c.564.015 1.008.482.993 1.046a1.012 1.012 0 0 1-.168.534 1.11 1.11 0 0 1 .647 1.035 1.11 1.11 0 0 1-.075.362l.004-.007.1.018a.784.784 0 0 1 .124-.46.784.784 0 0 1 .68-.362.9.9 0 0 1 .112-.71.896.896 0 0 1 .504-.373.994.994 0 0 1-.123-1.225.99.99 0 0 1 .257-.269 1.098 1.098 0 0 1-.35-1.453 1.326 1.326 0 0 1-.696-.273h-.003a1.334 1.334 0 0 1-.512-1.158 1.082 1.082 0 0 1-.837-.145 1.106 1.106 0 0 1-.44-.535 1.02 1.02 0 0 1-1.05-.026 1.016 1.016 0 0 1-.258-.235zm-.094 3.116l-.007.066a.74.74 0 0 0 .007-.066zm-2.864-.259a1.36 1.36 0 0 1-.363.598.418.418 0 0 1 .194.187.422.422 0 0 1-.007.396.665.665 0 0 1 .329 1.113.736.736 0 0 1 .358.336.739.739 0 0 1-.32.994.915.915 0 0 1 .197.261.91.91 0 0 1-.396 1.233.919.919 0 0 1-.224.082v.004a1.02 1.02 0 0 1-.44 1.374 1.012 1.012 0 0 1-.55.109 1.11 1.11 0 0 1-.661 1.083.642.642 0 0 1 .112.21.026.026 0 0 1-.004 0v.003a.784.784 0 0 1 .456-.134.784.784 0 0 1 .661.392.9.9 0 0 1 .665-.27.896.896 0 0 1 .587.236.994.994 0 0 1 .982-.736.99.99 0 0 1 .362.079v.022a1.1 1.1 0 0 1 1.061-1.072 1.326 1.326 0 0 1-.123-.736c.056-.46.34-.837.725-1.035l.003.004a1.102 1.102 0 0 1-.31-.795 1.106 1.106 0 0 1 .232-.654 1.02 1.02 0 0 1-.452-1.251.915.915 0 0 1-.822-.934.923.923 0 0 1 .011-.142.74.74 0 0 1-.157.015.74.74 0 0 1-.698-.572.661.661 0 0 1-.385.112.667.667 0 0 1-.627-.512.418.418 0 0 1-.217.053.418.418 0 0 1-.18-.045zm-.964.93a1.36 1.36 0 0 1-.336.042c-.112 0-.22-.012-.322-.038a.418.418 0 0 1-.06.295.422.422 0 0 1-.343.195.665.665 0 0 1-.792.844.736.736 0 0 1-.112.478.74.74 0 0 1-1.02.224.915.915 0 0 1-.127.306.915.915 0 0 1-1.266.28.919.919 0 0 1-.183-.153v.004a1.02 1.02 0 0 1-1.408.31 1.012 1.012 0 0 1-.374-.418c-.355.239-.83.261-1.214.015a1.113 1.113 0 0 1-.21-.172.65.65 0 0 1-.081.105.784.784 0 0 1 .336.336.784.784 0 0 1-.034.77.89.89 0 0 1 .553.455.896.896 0 0 1 .075.624.994.994 0 0 1 1.12.515.99.99 0 0 1 .101.355 1.098 1.098 0 0 1 1.431.43 1.326 1.326 0 0 1 .587-.46c.43-.172.896-.104 1.255.142a1.106 1.106 0 0 1 .549-.65 1.106 1.106 0 0 1 .683-.108 1.02 1.02 0 0 1 .553-.893 1.02 1.02 0 0 1 .333-.104.916.916 0 0 1 .425-1.17.919.919 0 0 1 .131-.052.736.736 0 0 1-.09-.134.738.738 0 0 1 .169-.886.661.661 0 0 1-.28-.284.67.67 0 0 1 .149-.799.418.418 0 0 1-.15-.164.418.418 0 0 1-.048-.24z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portofolio Section Start -->
+    <section id="portofolio" class="lg:px-10 pt-36 pb-16 bg-slate-100">
+      <div class="container w-full">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary">Portofolio</h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Proyek
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Selama masa sekolah, saya berkesempatan mengerjakan beberapa
+              proyek pengembangan website, mulai dari tugas akademik hingga
+              proyek nyata untuk perusahaan ketika menjalani Praktik Kerja
+              Lapangan (PKL) Kantor Regional III di Badan Kepegawaian Negara.
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <div class="rounded-xl mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./assets/img/1.png" alt="HTE" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Here There Everywhere
+            </h3>
+            <p class="font-medium text-base text-secondary">
+              Here There Everywhere merupakan website berbasis IoT yang
+              berfungsi untuk memantau suhu, mengontrol lampu LED, serta
+              mendeteksi objek di dekat pintu. Proyek ini dikembangkan sebagai
+              tugas akhir Ujikom dengan fokus pada monitoring dan kontrol
+              cerdas.
+            </p>
+          </div>
+          <div class="rounded-xl mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="./assets/img/2.png" alt="SIIT" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Sistem Informasi Takah
+            </h3>
+            <p class="font-medium text-base text-secondary">
+              Sistem Informasi Takah adalah sebuah website yang dirancang untuk
+              memberikan informasi terkait keberadaan dokumen, sehingga pengguna
+              dapat mengetahui lokasi penyimpanan dokumen tersebut di lemari
+              yang sesuai. Website ini dikembangkan sebagai bagian dari proyek
+              Praktik Kerja Lapangan (PKL) di Kantor Regional III Badan
+              Kepegawaian Negara (BKN).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portofolio Section End -->
+
+    <!-- Tech Stack Section Start -->
+    <section id="tech-stack" class="lg:px-10 pt-20 pb-16 bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto text-center">
+            <h4 class="font-semibold text-lg text-primary">Tech Stack</h4>
+            <h2
+              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Memiliki Pengalaman Menggunakan Teknologi Website
+            </h2>
+          </div>
+          <div class="max-w-3xl mx-auto text-center">
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Dalam perjalanan saya mengembangkan berbagai proyek website, saya
+              telah menggunakan beragam teknologi yang mendukung setiap aspek
+              pengembangan. Mulai dari teknologi frontend untuk membangun
+              tampilan antarmuka yang menarik dan interaktif, teknologi backend
+              untuk mengatur logika aplikasi serta pengelolaan data.
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <!-- HTML -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+              <svg
+                enable-background="new 0 0 32 32"
+                id="Layer_1"
+                version="1.0"
+                viewBox="0 0 32 32"
+                x="0px"
+                y="0px"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <polygon
+                    fill="#E44D26"
+                    points="27.377,28.889 16.001,32 4.625,28.889 2,0 30.002,0  "
+                  />
+                  <polygon
+                    fill="#FF6C39"
+                    points="16,2 16,29.75 25.232,27.008 27.688,2  "
+                  />
+                  <polygon
+                    fill="#FFFFFF"
+                    points="24.363,6 7.607,6 8,10 8.619,17 19.503,17 19.148,20.984 16,21.99 12.857,20.984 12.648,19    8.803,19 9.262,23.987 16,25.99 22.728,23.986 23.718,13 12.252,13 12.002,10 24,10  "
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- CSS -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+              <svg
+                enable-background="new 0 0 32 32"
+                id="Layer_1"
+                version="1.0"
+                viewBox="0 0 32 32"
+                x="0px"
+                y="0px"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <polygon
+                    fill="#1F62AE"
+                    points="27.377,28.889 16.001,32 4.625,28.889 2,0 30.002,0  "
+                  />
+                  <polygon
+                    fill="#347DC6"
+                    points="16,2 16,29.75 25.232,27.008 27.688,2  "
+                  />
+                  <polygon
+                    fill="#FFFFFF"
+                    points="24.363,6 7.607,6 8,10 16,10 8.25,12.99 8.619,17 19.502,17 19.158,21 16,21.99 12.861,20.984    12.533,19 8.803,19 9.262,23.987 16,25.99 22.728,23.986 23.719,12.99 16.026,12.99 24,10  "
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- Javascript -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                style="enable-background: new 0 0 512 512"
+                version="1.1"
+                viewBox="0 0 512 512"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g id="_x31_87-js">
+                  <g>
+                    <rect
+                      height="459.998"
+                      style="fill: #f0db4f"
+                      width="459.996"
+                      x="26.002"
+                      y="26.001"
+                    />
+                    <path
+                      d="M276.331,384.759c0,44.767-26.286,65.2-64.586,65.2c-34.601,0-54.623-17.865-64.892-39.529    l35.218-21.255c6.777,12.013,12.938,22.177,27.826,22.177c14.169,0,23.207-5.544,23.207-27.208V237.21h43.227V384.759    L276.331,384.759z"
+                      style="fill: #323330"
+                    />
+                    <path
+                      d="M378.598,449.959c-40.147,0-66.124-19.099-78.754-44.151l35.219-20.332    c9.241,15.095,21.356,26.286,42.611,26.286c17.866,0,29.364-8.932,29.364-21.355c0-14.787-11.704-20.021-31.52-28.75l-10.781-4.62    c-31.214-13.246-51.853-29.983-51.853-65.2c0-32.447,24.745-57.09,63.248-57.09c27.518,0,47.232,9.549,61.402,34.603    l-33.679,21.562c-7.392-13.246-15.401-18.481-27.825-18.481c-12.63,0-20.639,8.01-20.639,18.481    c0,12.938,8.009,18.176,26.594,26.285l10.78,4.621c36.759,15.71,57.397,31.832,57.397,67.974    C450.164,428.602,419.565,449.959,378.598,449.959L378.598,449.959z"
+                      style="fill: #323330"
+                    />
+                  </g>
+                </g>
+                <g id="Layer_1" />
+              </svg>
+            </a>
+
+            <!-- PHP -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+              <svg
+                enable-background="new 0 0 1024 1024"
+                height="100"
+                id="Layer_1"
+                version="1.1"
+                viewBox="0 0 1024 1024"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="fill-[#6181b6]"
+              >
+                <g>
+                  <g>
+                    <path
+                      clip-rule="evenodd"
+                      d="M740.89,756c-28.309,0-55.524,0-84.082,0     c25.013-128.633,49.92-256.731,74.87-385.048c2.393-0.235,4.366-0.598,6.34-0.598c54.214-0.014,108.435-0.436,162.637,0.308     c15.325,0.209,30.963,2.407,45.83,6.172c48.371,12.254,77.035,48.104,77.505,97.895c0.555,58.535-20.852,107.477-67.27,144.584     c-30.078,24.047-65.316,32.457-102.648,33.696c-28.259,0.938-56.565,0.536-84.85,0.393c-6.028-0.031-8.746,1.323-9.946,7.933     C753.575,692.714,747.181,723.972,740.89,756z M772.533,593.771c29.298-1.149,56.577-0.857,83.543-3.622     c35.227-3.61,60.276-22.646,70.639-57.123c4.966-16.519,8.088-34.049,8.864-51.264c1.226-27.24-10.242-42.684-37.258-46.387     c-30.764-4.22-62.115-4.167-93.836-6.004C793.706,484.828,783.354,538.097,772.533,593.771z"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M84.067,755.864c-28.285,0-55.791,0-84.067,0     c24.975-128.488,49.842-256.42,74.812-384.885c2.794-0.229,5.377-0.626,7.962-0.628c53.2-0.02,106.405-0.4,159.597,0.284     c15.001,0.191,30.306,2.131,44.881,5.689c47.914,11.694,75.555,42.038,79.199,91c7.108,95.563-56.826,162.972-120.058,178.417     c-16.871,4.123-34.456,6.414-51.818,7.192c-27.558,1.235-55.207,0.619-82.814,0.478c-5.688-0.029-8.127,1.439-9.244,7.51     C96.75,692.319,90.399,723.61,84.067,755.864z M115.668,593.756c29.109-1.132,56.396-0.816,83.367-3.585     c36.135-3.704,61.246-23.462,71.41-58.902c4.578-15.967,7.589-32.797,8.298-49.362c1.166-27.234-10.252-42.804-37.18-46.504     c-30.776-4.232-62.14-4.192-93.923-6.048C136.856,484.812,126.492,538.104,115.668,593.756z"
+                      fill-rule="evenodd"
+                    />
+                    <path
+                      clip-rule="evenodd"
+                      d="M425.175,268c28.362,0,55.53,0,83.411,0     c-6.596,34.203-13.07,67.788-19.73,102.324c22.678,0,44.557-0.764,66.357,0.213c22.099,0.989,44.584,1.527,66.085,6.097     c45.427,9.658,64.543,39.17,56.396,85.581c-9.233,52.626-19.925,104.995-29.987,157.475c-1.772,9.24-3.235,18.562-5.572,27.659     c-0.618,2.407-3.939,5.848-6.063,5.879c-26.183,0.404-52.373,0.265-79.682,0.265c4.906-25.491,9.612-49.828,14.271-74.171     c6.758-35.32,13.94-70.565,20.062-105.992c4.479-25.91-5.535-38.755-31.935-39.911c-26.852-1.174-53.795-0.259-82.187-0.259     c-14.196,72.85-28.438,145.925-42.806,219.656c-27.511,0-54.925,0-83.431,0C375.325,524.417,400.186,396.54,425.175,268z"
+                      fill-rule="evenodd"
+                    />
+                  </g>
+                </g>
+              </svg>
+            </a>
+
+            <!-- Codeigniter -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><svg
+                id="Layer_1"
+                style="enable-background: new 0 0 256 304"
+                version="1.1"
+                viewBox="0 0 256 304"
+                x="0px"
+                y="0px"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g>
+                  <path
+                    class="st0"
+                    d="M85.2,303.1c-18-7.8-34.8-27.5-34.8-47.7c0-22,13.9-40.7,31.3-53c-2.1,7.9-3.2,15.1,1.9,22.2   c4.8,6.6,13.2,9.8,21.2,8c18.6-4.1,19.4-24.5,8.4-36.4C102.3,184.3,91.8,171,96,153.9c2.1-8.6,7.3-16.6,14-22.3   c-5.1,13.5,9.4,26.7,19,33.4c16.6,11.5,34.9,20.1,50.2,33.6c16.1,14.1,28,33.3,25.6,55.4c-2.6,24-21.7,40.7-43.1,49.2   c45.3-10,92-45.1,93-95.3c0.8-41.3-27.5-73.1-62.6-91.3l-1.8-1c1,2.3,1.3,4.3,1.2,6.1c0.3-1.3,0.5-2.7,0.6-4.1   c0,1.7-0.2,3.4-0.6,4.9l0.1-0.8c-0.5,2.2-1.4,4.3-2.6,6.2l0.5-0.6c-7,11.6-26,14.1-35.3,2.1c-15.1-19.3,0.3-40.2,2.5-60.7   c2.7-25.7-13.4-50.6-33.4-65.5c11,17.8-3.5,41.3-15.1,54.5c-11.2,12.8-24.9,23.4-37.3,35c-13.3,12.4-26.1,25.5-37.1,40.1   c-21.9,29.2-35.3,66-25.5,102.4C18,271.7,49.6,294.9,85.2,303.1L85.2,303.1z"
+                    style="fill: #ee4323"
+                  />
+                </g>
+              </svg>
+            </a>
+
+            <!-- Bootstrap -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><svg
+                viewBox="0 0 576 512"
+                width="70"
+                height="70"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-[#673AB7]"
+              >
+                <path
+                  d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"
+                />
+              </svg>
+            </a>
+
+            <!-- MySql -->
+            <a
+              href=""
+              class="max-w[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+            >
+              <?xml version="1.0"?><svg
+                id="Layer_1"
+                style="enable-background: new 0 0 180.6 95.3"
+                version="1.1"
+                viewBox="0 0 180.6 95.3"
+                width="70"
+                height="70"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #00678f;
+                  }
+                  .st1 {
+                    fill: #e38d1a;
+                  }
+                </style>
+                <path
+                  class="st0"
+                  d="M1.7,85.3h5.8v-23l9.1,20c1,2.4,2.5,3.3,5.4,3.3c2.9,0,4.2-0.9,5.3-3.3l9-20v23h5.8v-23c0-2.2-0.9-3.3-2.8-3.9  c-4.4-1.3-7.4-0.2-8.7,2.8L21.8,81l-8.6-19.8c-1.3-3-4.3-4.1-8.7-2.8C2.6,59,1.7,60,1.7,62.3L1.7,85.3L1.7,85.3z"
+                />
+                <path
+                  class="st0"
+                  d="M46.9,66.6h5.8v12.6c0,0.7,0.2,2.3,3.4,2.4c1.7,0,12.6,0,12.7,0V66.5h5.8c0,0,0,20.6,0,20.7  c0,5.1-6.3,6.2-9.2,6.2H47.1v-3.9c0,0,18.4,0,18.4,0c3.7-0.4,3.3-2.3,3.3-2.9v-1.5H56.4c-5.8,0-9.5-2.6-9.5-5.5  C46.9,79.3,47.1,66.7,46.9,66.6L46.9,66.6z"
+                />
+                <path
+                  class="st0"
+                  d="M172.3,51.9c-3.6-0.1-6.3,0.3-8.7,1.2c-0.7,0.3-1.7,0.3-1.8,1.1c0.4,0.4,0.4,0.9,0.7,1.4  c0.5,0.9,1.5,2.1,2.3,2.7c0.9,0.7,1.9,1.4,2.9,2.1c1.7,1.1,3.7,1.7,5.4,2.8c1,0.6,2,1.4,2.9,2.1c0.5,0.4,0.8,0.9,1.4,1.2  c0,0,0-0.1,0-0.1c-0.3-0.4-0.4-1-0.7-1.4c-0.4-0.4-0.9-0.8-1.3-1.3c-1.3-1.7-2.9-3.3-4.6-4.5c-1.4-1-4.6-2.3-5.1-4c0,0,0,0-0.1-0.1  c1-0.1,2.1-0.4,3.1-0.7c1.5-0.4,2.9-0.3,4.5-0.7c0.7-0.2,1.4-0.4,2.1-0.6c0-0.1,0-0.3,0-0.4c-0.8-0.8-1.4-1.9-2.2-2.6  c-2.3-2-4.8-3.9-7.4-5.5c-1.4-0.9-3.2-1.5-4.6-2.2c-0.5-0.3-1.4-0.4-1.7-0.8c-0.8-1-1.3-2.3-1.8-3.4c-1.3-2.5-2.5-5.2-3.7-7.8  c-0.8-1.7-1.3-3.5-2.3-5.1c-4.6-7.6-9.6-12.2-17.3-16.7c-1.7-0.9-3.6-1.3-5.7-1.8c-1.1,0-2.2-0.1-3.3-0.2c-0.7-0.3-1.4-1.2-2.1-1.6  c-2.5-1.6-9.1-5.1-11-0.5c-1.2,2.9,1.8,5.8,2.8,7.2c0.8,1,1.7,2.2,2.3,3.3c0.3,0.8,0.4,1.6,0.7,2.4c0.7,2,1.4,4.1,2.3,6  c0.5,0.9,1,1.9,1.7,2.8c0.4,0.5,1,0.7,1.1,1.5c-0.6,0.9-0.7,2.2-1,3.3c-1.6,5-1,11.3,1.3,15c0.7,1.1,2.4,3.6,4.7,2.6  c2-0.8,1.6-3.3,2.1-5.6c0.1-0.5,0-0.9,0.3-1.2c0,0,0,0.1,0,0.1c0.6,1.2,1.2,2.5,1.8,3.7c1.4,2.2,3.8,4.5,5.8,6  c1.1,0.8,1.9,2.2,3.3,2.7c0,0,0-0.1,0-0.1c0,0,0,0-0.1,0c-0.3-0.4-0.7-0.6-1-0.9c-0.8-0.8-1.7-1.8-2.3-2.7c-1.9-2.5-3.5-5.3-5-8.1  c-0.7-1.4-1.3-2.9-1.9-4.3c-0.3-0.5-0.3-1.3-0.7-1.6c-0.7,1-1.7,1.8-2.1,3c-0.8,1.9-0.9,4.3-1.2,6.7c-0.2,0-0.1,0-0.2,0.1  c-1.4-0.4-1.9-1.8-2.5-3.1c-1.3-3.2-1.6-8.3-0.4-11.9c0.3-0.9,1.7-3.9,1.1-4.8c-0.3-0.8-1.2-1.3-1.7-2c-0.6-0.8-1.2-1.9-1.6-2.9  c-1.1-2.5-1.6-5.3-2.8-7.8c-0.5-1.2-1.5-2.4-2.2-3.4c-0.8-1.2-1.8-2.1-2.5-3.5c-0.2-0.5-0.5-1.3-0.2-1.8c0.1-0.4,0.3-0.5,0.6-0.6  c0.6-0.5,2.2,0.1,2.8,0.4c1.7,0.7,3,1.3,4.4,2.2c0.6,0.4,1.3,1.3,2.1,1.5c0.3,0,0.6,0,0.9,0c1.4,0.3,3,0.1,4.4,0.5  c2.4,0.8,4.5,1.9,6.4,3.1c5.8,3.7,10.7,9,13.9,15.3c0.5,1,0.8,2,1.2,3c0.9,2.2,2.1,4.4,3,6.6c0.9,2.1,1.8,4.2,3.2,6  c0.7,0.9,3.3,1.4,4.6,1.9c0.9,0.4,2.3,0.8,3.1,1.2c1.5,0.9,3,2,4.5,3C169.9,49.9,172.2,51,172.3,51.9L172.3,51.9z"
+                />
+                <path
+                  class="st0"
+                  d="M126.8,13.2c-0.8,0-1.3,0.1-1.8,0.2c0,0,0,0,0,0.1c0,0,0,0,0.1,0c0.4,0.7,1,1.2,1.4,1.8c0.4,0.7,0.7,1.4,1,2.1  c0,0,0.1-0.1,0.1-0.1c0.6-0.4,0.9-1.2,0.9-2.2c-0.3-0.3-0.3-0.6-0.5-0.9C127.7,13.7,127.1,13.5,126.8,13.2L126.8,13.2z"
+                />
+                <path
+                  class="st1"
+                  d="M79.1,85.3h16.8c2,0,3.8-0.4,5.4-1.1c2.5-1.2,3.7-2.7,3.7-4.8v-4.3c0-1.7-1.4-3.2-4.1-4.3  c-1.4-0.5-3.2-0.8-5-0.8h-7c-2.4,0-3.5-0.7-3.8-2.3c0-0.2,0-0.4,0-0.5v-2.6c0-0.1,0-0.3,0-0.5c0.3-1.2,0.9-1.5,3-1.7  c0.2,0,0.4,0,0.5,0h16.6v-3.9H88.9c-2.4,0-3.6,0.1-4.7,0.5c-3.4,1.1-5,2.8-5,5.8V68c0,2.6,2.9,4.9,7.9,5.4c0.5,0,1.1,0,1.7,0h6  c0.2,0,0.4,0,0.6,0c1.8,0.2,2.6,0.5,3.2,1.2c0.4,0.4,0.4,0.7,0.4,1.1v3.4c0,0.4-0.3,0.9-0.8,1.4s-1.4,0.8-2.5,0.8  c-0.2,0-0.4,0-0.6,0H79.1L79.1,85.3L79.1,85.3z"
+                />
+                <path
+                  class="st1"
+                  d="M141.3,78.5c0,4,3,6.2,9,6.6c0.6,0,1.1,0.1,1.7,0.1h15.2v-3.9h-15.3c-3.4,0-4.7-0.8-4.7-2.9V58.4h-5.8  L141.3,78.5L141.3,78.5z"
+                />
+                <path
+                  class="st1"
+                  d="M108.7,78.7V64.9c0-3.5,2.5-5.7,7.4-6.3c0.5,0,1.1-0.1,1.6-0.1h11.1c0.6,0,1.1,0,1.7,0.1  c4.9,0.7,7.3,2.8,7.3,6.3v13.8c0,2.9-1,4.4-3.4,5.4l5.7,5.2h-6.7l-4.6-4.2l-4.7,0.3h-6.2c-1,0-2.2-0.1-3.4-0.4  C110.5,83.9,108.7,81.9,108.7,78.7L108.7,78.7z M115,78.4c0,0.2,0.1,0.4,0.1,0.6c0.3,1.6,1.8,2.5,4.1,2.5h5.3l-4.8-4.4h6.7l4.2,3.8  c0.8-0.4,1.3-1.1,1.5-1.9c0-0.2,0-0.4,0-0.6V65.2c0-0.2,0-0.4,0-0.5c-0.3-1.5-1.8-2.4-4.1-2.4h-8.8c-2.6,0-4.3,1.1-4.3,2.9L115,78.4  L115,78.4z"
+                />
+                <path
+                  class="st1"
+                  d="M169.8,85.3h0.8V82h1.1v-0.7h-3.1V82h1.2L169.8,85.3L169.8,85.3z M176.3,85.3h0.8v-3.9h-1.2l-1,2.7l-1.1-2.7  h-1.2v3.9h0.8v-3h0l1.1,3h0.6l1.1-3l0,0L176.3,85.3L176.3,85.3z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tech Stack Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="lg:px-10 pt-36 pb-16">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary">Contact</h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Hubungi Saya
+            </h2>
+            <p class="font-medium text-md text-secondary md:text-lg">
+              Apabila Anda memiliki pertanyaan, masukan, atau ingin bekerja sama
+              dengan saya, jangan ragu untuk menghubungi saya melalui form di
+              bawah ini.
+            </p>
+          </div>
+        </div>
+        <form action="">
+          <div class="w-full lg:w-1/2 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-primary"
+                >Nama</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base font-bold text-primary"
+                >Pesan</label
+              >
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-1 focus:border-primary h-32"
+              ></textarea>
+            </div>
+            <div class="w-full px-4 mb-8">
+              <button
+                class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-dark pt-24 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap lg:justify-around">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h3 class="font-bold text-2xl mb-2 text-white">Hubungi Saya</h3>
+            <p class="text-base mb-3">yandrajafarsidiq8@gmail.com</p>
+            <p class="text-base mb-3">Bandung</p>
+          </div>
+          <div class="w-full px-4 mb-12 md:w-1/3">
+            <h3 class="font-semibold text-xl text-white mb-5">Tautan</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tech-stack"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Tech Stack</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="inline-block text-base hover:text-primary mb-3"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex items-center justify-center gap-2 mb-5">
+            <!-- Instagram -->
+            <a
+              href="https:/instagram.com/y.jafarsidiq"
+              class="w-9 h-9 rounded-full flex justify-center items-center text-white border border-white hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                viewBox="0 0 30 30"
+                class="fill-current"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                ></path>
+              </svg>
+            </a>
+            <!-- Spotify -->
+            <a
+              href="https://open.spotify.com/user/31ue7gnqj7fyiovbwy4scbwkb7sm?si=63a4cdbbd6d949f5"
+              class="w-9 h-9 rounded-full flex justify-center items-center text-white border border-white hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+              >
+                <title>Spotify</title>
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"
+                />
+              </svg>
+            </a>
+            <!-- Github -->
+            <a
+              href="https://github.com/yandrajs"
+              class="w-9 h-9 rounded-full flex justify-center items-center text-white border border-white hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                width="25"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <!-- LingkedIn -->
+            <a
+              href="https://www.linkedin.com/in/yandra-jafar-sidiq-714770352"
+              class="w-9 h-9 rounded-full flex justify-center items-center text-white border border-white hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="27"
+                viewBox="0 0 30 30"
+                class="fill-current"
+              >
+                <title>LingkedIn</title>
+                <path
+                  d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+                ></path>
+              </svg>
+            </a>
+            <!-- Codewars -->
+            <a
+              href="https://www.codewars.com/users/yandrajs"
+              class="w-9 h-9 rounded-full flex justify-center items-center text-white border border-white hover:bg-transparent hover:border-primary hover:text-primary duration-200 transition ease-in-out"
+              ><svg
+                role="img"
+                viewBox="0 0 24 24"
+                width="20"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+              >
+                <title>Codewars</title>
+                <path
+                  d="M1.072.142A1.072 1.072 0 0 0 0 1.214v21.572a1.072 1.072 0 0 0 1.072 1.072h21.856A1.072 1.072 0 0 0 24 22.786V1.214A1.072 1.072 0 0 0 22.928.142zm9.736 1.818a.904.904 0 0 1 .828.539.784.784 0 0 1 1.274.493.639.639 0 0 1 .29-.06c.33.008.59.262.625.575a1.322 1.322 0 0 1 .624-.515 1.325 1.325 0 0 1 1.718.71 1.098 1.098 0 0 1 .306-.236 1.102 1.102 0 0 1 1.483.479 1.094 1.094 0 0 1 .12.47.994.994 0 0 1 1.322 1.214.904.904 0 0 1 .874 1.438.784.784 0 0 1 .176 1.356.639.639 0 0 1 .19.224.642.642 0 0 1-.011.613 1.326 1.326 0 0 1 .482.235 1.334 1.334 0 0 1 .258 1.842 1.098 1.098 0 0 1 .35.15 1.102 1.102 0 0 1 .337 1.516 1.094 1.094 0 0 1-.344.344.994.994 0 0 1 .228 1.318 1.006 1.006 0 0 1-.605.434.904.904 0 0 1-.803 1.482.814.814 0 0 0-.008-.04.784.784 0 0 1-1.075.873.639.639 0 0 1-.098.28.625.625 0 0 1-.43.288 1.33 1.33 0 0 1 .023.456 1.334 1.334 0 0 1-1.44 1.173 1.098 1.098 0 0 1 .054.377 1.102 1.102 0 0 1-1.128 1.072 1.098 1.098 0 0 1-.47-.12.994.994 0 0 1-1.696.583.904.904 0 0 1-1.685.075.784.784 0 0 1-1.274-.493.639.639 0 0 1-.29.064.64.64 0 0 1-.621-.58l.004-.007a1.326 1.326 0 0 1-.632.523 1.334 1.334 0 0 1-1.718-.706 1.098 1.098 0 0 1-.306.232 1.102 1.102 0 0 1-1.48-.478 1.094 1.094 0 0 1-.123-.471.994.994 0 0 1-1.318-1.21.904.904 0 0 1-.874-1.442.784.784 0 0 1-.176-1.356.639.639 0 0 1-.194-.224.642.642 0 0 1 .011-.61l.019.004a1.326 1.326 0 0 1-.497-.239 1.334 1.334 0 0 1-.262-1.845 1.098 1.098 0 0 1-.35-.146 1.102 1.102 0 0 1-.337-1.52 1.094 1.094 0 0 1 .347-.34A.994.994 0 0 1 2.88 9a.904.904 0 0 1 .803-1.48.784.784 0 0 1 1.083-.836.639.639 0 0 1 .098-.28.649.649 0 0 1 .433-.288 1.33 1.33 0 0 1-.026-.452A1.334 1.334 0 0 1 6.716 4.49a1.098 1.098 0 0 1-.06-.377 1.101 1.101 0 0 1 1.13-1.073 1.094 1.094 0 0 1 .47.115.994.994 0 0 1 1.696-.579.904.904 0 0 1 .857-.617zM3.683 7.519a.784.784 0 0 0 .008.041l-.004-.04a.904.904 0 0 0-.004-.001zM17.502 19.61a1.098 1.098 0 0 0-.002-.004h-.037a1.334 1.334 0 0 0 .039.004zM13.825 3.507a1.322 1.322 0 0 0-.008.012l.008-.011zm-2.369-.014l-.003.003a.9.9 0 0 1-.665.27.896.896 0 0 1-.583-.232.994.994 0 0 1-.986.732.99.99 0 0 1-.362-.075 1.098 1.098 0 0 1-1.061 1.046 1.326 1.326 0 0 1 .123.736 1.334 1.334 0 0 1-.725 1.035 1.1 1.1 0 0 1 .307.795 1.106 1.106 0 0 1-.232.65c.321.18.53.523.523.915a1.016 1.016 0 0 1-.07.337.915.915 0 0 1 .82.937.923.923 0 0 1-.01.138.74.74 0 0 1 .157-.01c.343.007.627.25.702.57a.661.661 0 0 1 .38-.111c.31.007.561.224.632.511a.418.418 0 0 1 .381-.015 1.352 1.352 0 0 1 .303-.63.418.418 0 0 1-.12-.143.422.422 0 0 1 .004-.392.665.665 0 0 1-.325-1.117.736.736 0 0 1-.359-.336.74.74 0 0 1 .385-1.023.747.747 0 0 0-.06.026.915.915 0 0 1-.201-.262.915.915 0 0 1 .623-1.315V6.53a1.02 1.02 0 0 1 .437-1.371 1.012 1.012 0 0 1 .553-.112 1.11 1.11 0 0 1 .598-1.054 1.12 1.12 0 0 1 .06-.026.642.642 0 0 1-.109-.21.784.784 0 0 1-.455.132.784.784 0 0 1-.662-.396zm4.573 1.512a1.326 1.326 0 0 1-.587.46 1.334 1.334 0 0 1-1.255-.142v-.011a1.11 1.11 0 0 1-.553.66 1.106 1.106 0 0 1-.683.113 1.02 1.02 0 0 1-.553.889 1.016 1.016 0 0 1-.329.105.918.918 0 0 1-.43 1.169.923.923 0 0 1-.127.056.74.74 0 0 1 .086.13.738.738 0 0 1-.168.89.661.661 0 0 1 .28.283.655.655 0 0 1-.149.796.418.418 0 0 1 .153.164c.019.034.03.068.038.101a1.356 1.356 0 0 1 .672-.015.422.422 0 0 1 .056-.142.422.422 0 0 1 .34-.194.665.665 0 0 1 .796-.848.736.736 0 0 1 .112-.478.733.733 0 0 1 1.016-.224.915.915 0 0 1 .127-.306.915.915 0 0 1 1.27-.28.915.915 0 0 1 .179.153 1.02 1.02 0 0 1 1.408-.314 1.012 1.012 0 0 1 .374.422c.355-.24.833-.261 1.214-.015a1.11 1.11 0 0 1 .209.172.642.642 0 0 1 .082-.108.784.784 0 0 1-.332-.337.784.784 0 0 1 .03-.77.9.9 0 0 1-.553-.455.896.896 0 0 1-.075-.624.994.994 0 0 1-1.117-.511.994.994 0 0 1-.104-.359 1.098 1.098 0 0 1-1.427-.43zM5.249 7.37a.784.784 0 0 1-.124.46.784.784 0 0 1-.68.362c.06.235.026.49-.112.71a.896.896 0 0 1-.5.377c.31.325.373.829.12 1.225a.99.99 0 0 1-.255.269 1.098 1.098 0 0 1 .351 1.45 1.326 1.326 0 0 1 .691.276 1.334 1.334 0 0 1 .512 1.154c.28-.064.579-.019.84.15a1.106 1.106 0 0 1 .438.53 1.02 1.02 0 0 1 1.05.03 1.016 1.016 0 0 1 .257.231.914.914 0 0 1 1.225-.224.919.919 0 0 1 .112.086.74.74 0 0 1 .071-.142.74.74 0 0 1 .852-.306.661.661 0 0 1 .1-.381.664.664 0 0 1 .763-.273.418.418 0 0 1 .246-.373 1.36 1.36 0 0 1-.358-.523v-.008a.418.418 0 0 1-.25.075.422.422 0 0 1-.344-.19.665.665 0 0 1-1.132-.243.736.736 0 0 1-.47.149.733.733 0 0 1-.718-.755.915.915 0 0 1-.329.049.915.915 0 0 1-.855-1.177h-.004a1.016 1.016 0 0 1-.993-1.042 1.012 1.012 0 0 1 .168-.534 1.11 1.11 0 0 1-.64-1.035 1.11 1.11 0 0 1 .068-.358.65.65 0 0 1-.1-.019zm11.127 2.133a.913.913 0 0 1-1.225.224.926.926 0 0 1-.112-.082.74.74 0 0 1-.067.142.74.74 0 0 1-.852.302.661.661 0 0 1-.105.385.662.662 0 0 1-.762.277.418.418 0 0 1-.063.212.426.426 0 0 1-.075.086 1.356 1.356 0 0 1 .314.564.418.418 0 0 1 .187-.04.422.422 0 0 1 .343.194.665.665 0 0 1 1.136.242.736.736 0 0 1 .467-.153c.41.008.728.348.72.755a.74.74 0 0 1 0 .008v-.005a.915.915 0 0 1 .326-.052.915.915 0 0 1 .896.941.919.919 0 0 1-.037.236c.564.015 1.008.482.993 1.046a1.012 1.012 0 0 1-.168.534 1.11 1.11 0 0 1 .647 1.035 1.11 1.11 0 0 1-.075.362l.004-.007.1.018a.784.784 0 0 1 .124-.46.784.784 0 0 1 .68-.362.9.9 0 0 1 .112-.71.896.896 0 0 1 .504-.373.994.994 0 0 1-.123-1.225.99.99 0 0 1 .257-.269 1.098 1.098 0 0 1-.35-1.453 1.326 1.326 0 0 1-.696-.273h-.003a1.334 1.334 0 0 1-.512-1.158 1.082 1.082 0 0 1-.837-.145 1.106 1.106 0 0 1-.44-.535 1.02 1.02 0 0 1-1.05-.026 1.016 1.016 0 0 1-.258-.235zm-.094 3.116l-.007.066a.74.74 0 0 0 .007-.066zm-2.864-.259a1.36 1.36 0 0 1-.363.598.418.418 0 0 1 .194.187.422.422 0 0 1-.007.396.665.665 0 0 1 .329 1.113.736.736 0 0 1 .358.336.739.739 0 0 1-.32.994.915.915 0 0 1 .197.261.91.91 0 0 1-.396 1.233.919.919 0 0 1-.224.082v.004a1.02 1.02 0 0 1-.44 1.374 1.012 1.012 0 0 1-.55.109 1.11 1.11 0 0 1-.661 1.083.642.642 0 0 1 .112.21.026.026 0 0 1-.004 0v.003a.784.784 0 0 1 .456-.134.784.784 0 0 1 .661.392.9.9 0 0 1 .665-.27.896.896 0 0 1 .587.236.994.994 0 0 1 .982-.736.99.99 0 0 1 .362.079v.022a1.1 1.1 0 0 1 1.061-1.072 1.326 1.326 0 0 1-.123-.736c.056-.46.34-.837.725-1.035l.003.004a1.102 1.102 0 0 1-.31-.795 1.106 1.106 0 0 1 .232-.654 1.02 1.02 0 0 1-.452-1.251.915.915 0 0 1-.822-.934.923.923 0 0 1 .011-.142.74.74 0 0 1-.157.015.74.74 0 0 1-.698-.572.661.661 0 0 1-.385.112.667.667 0 0 1-.627-.512.418.418 0 0 1-.217.053.418.418 0 0 1-.18-.045zm-.964.93a1.36 1.36 0 0 1-.336.042c-.112 0-.22-.012-.322-.038a.418.418 0 0 1-.06.295.422.422 0 0 1-.343.195.665.665 0 0 1-.792.844.736.736 0 0 1-.112.478.74.74 0 0 1-1.02.224.915.915 0 0 1-.127.306.915.915 0 0 1-1.266.28.919.919 0 0 1-.183-.153v.004a1.02 1.02 0 0 1-1.408.31 1.012 1.012 0 0 1-.374-.418c-.355.239-.83.261-1.214.015a1.113 1.113 0 0 1-.21-.172.65.65 0 0 1-.081.105.784.784 0 0 1 .336.336.784.784 0 0 1-.034.77.89.89 0 0 1 .553.455.896.896 0 0 1 .075.624.994.994 0 0 1 1.12.515.99.99 0 0 1 .101.355 1.098 1.098 0 0 1 1.431.43 1.326 1.326 0 0 1 .587-.46c.43-.172.896-.104 1.255.142a1.106 1.106 0 0 1 .549-.65 1.106 1.106 0 0 1 .683-.108 1.02 1.02 0 0 1 .553-.893 1.02 1.02 0 0 1 .333-.104.916.916 0 0 1 .425-1.17.919.919 0 0 1 .131-.052.736.736 0 0 1-.09-.134.738.738 0 0 1 .169-.886.661.661 0 0 1-.28-.284.67.67 0 0 1 .149-.799.418.418 0 0 1-.15-.164.418.418 0 0 1-.048-.24z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="font-medium text-sm text-slate-500 text-center">
+            Dibuat dengan <span class="text-pink-500">❤</span> oleh
+            <a
+              href="https://instagram.com/y.jafarsidiq"
+              target="_blank"
+              class="font-bold text-primary"
+              >Yandra</a
+            >, menggunakan
+            <a
+              href="https://tailwindcss.com"
+              target="_blank"
+              class="font-bold text-primary"
+              >Tailwind CSS.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+    <script src="src/script.js"></script>
+  </body>
+</html>
